@@ -1,7 +1,7 @@
 <!--只是一个组件-->
 
 <template>
-<text id="test">{{text}}</text>
+<p id="test">{{text}}</p>
 </template>
 <script>
     export default {
