@@ -16,6 +16,7 @@ const config = {
         path: path.join(__dirname, 'dist'),
     },
     module: {
+        // 加载器配置
         rules: [
             {
                 test: /\.vue$/,
@@ -33,20 +34,30 @@ const config = {
                 ]
             },
             {
-                test: /\.styl/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'stylus-loader',
-                    {
-                        loader:'postcss-loader',
-                        options:{
-                            sourceMap:true,
-                        }
-                    }
-                ]
-
+                test: /\.less$/,
+                use: [{
+                    loader: "style-loader" // creates style nodes from JS strings
+                }, {
+                    loader: "css-loader" // translates CSS into CommonJS
+                }, {
+                    loader: "less-loader" // compiles Less to CSS
+                }]
             },
+            // {
+            //     test: /\.styl/,
+            //     use: [
+            //         'style-loader',
+            //         'css-loader',
+            //         'stylus-loader',
+            //         {
+            //             loader:'postcss-loader',
+            //             options:{
+            //                 sourceMap:true,
+            //             }
+            //         }
+            //     ]
+            //
+            // },
             {
                 test: /\.(gif|jpg|png|jpeg)$/,
                 use: [
