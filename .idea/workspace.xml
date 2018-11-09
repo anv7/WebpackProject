@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9055062e-6b52-4b29-b501-a8fde5e02618" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/global.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/global.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todo/footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todo/header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todo/item.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todo/tabs.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todo/todo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/global.styl" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -121,8 +108,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/todo/header.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="240">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -135,15 +122,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/todo/item.vue">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/styles/global.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-start-column="2" selection-end-line="15" selection-end-column="3" />
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -331,12 +309,12 @@
       <updated>1541661557782</updated>
       <workItem from="1541661559138" duration="7601000" />
       <workItem from="1541685883824" duration="10262000" />
-      <workItem from="1541746492360" duration="6946000" />
+      <workItem from="1541746492360" duration="7555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24809000" />
+    <option name="totallyTimeSpent" value="25418000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -351,7 +329,7 @@
     <frame x="0" y="23" width="1440" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.59772295" visible="true" weight="0.2149401" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59772295" visible="true" weight="0.2149401" />
       <window_info id="Structure" order="1" sideWeight="0.40227705" side_tool="true" visible="true" weight="0.2149401" />
       <window_info id="Favorites" order="2" sideWeight="0.50068027" side_tool="true" weight="0.2149401" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -363,7 +341,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3292517" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49964765" visible="true" weight="0.2829932" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49964765" visible="true" weight="0.2829932" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003524" side_tool="true" weight="0.3292517" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -515,8 +493,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/todo/header.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="240">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
