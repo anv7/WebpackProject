@@ -3,7 +3,7 @@ import '../assets/styles/footer.less'
 export default {
     data() {
         return {
-            author: 'Jokcy'
+            author: 'ggy'
         }
     },
     render() {
