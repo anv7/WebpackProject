@@ -1,6 +1,6 @@
 <template>
     <header class="main-header">
-        <h1>G Todo6666666666</h1>
+        <h1>G Todo666666</h1>
 
     </header>
 </template>

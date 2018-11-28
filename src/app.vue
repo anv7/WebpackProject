@@ -36,7 +36,8 @@
             bottom: 0;
             background: #999;
             opacity: .4;
-            z-index: -1;
+            /*遮罩层*/
+            /*z-index: -1;*/
         }
     }
 
