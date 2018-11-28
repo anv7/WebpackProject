@@ -5,6 +5,7 @@ const path = require('path')
 const HTMLPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const webpack = require('webpack')
+const miniCssTextExtractPlugin = require('mini-css-extract-plugin') //样式处理模块
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -27,23 +28,23 @@ const config = {
                 exclude:/node_modules/,
                 loader: 'babel-loader'
             },
-            {
-                test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ]
-            },
-            {
-                test: /\.less$/,
-                use: [{
-                    loader: "style-loader" // creates style nodes from JS strings
-                }, {
-                    loader: "css-loader" // translates CSS into CommonJS
-                }, {
-                    loader: "less-loader" // compiles Less to CSS
-                }]
-            },
+            // {
+            //     test: /\.css$/,
+            //     use: [
+            //         'style-loader',
+            //         'css-loader'
+            //     ]
+            // },
+            // {
+            //     test: /\.less$/,
+            //     use: [{
+            //         loader: "style-loader" // creates style nodes from JS strings
+            //     }, {
+            //         loader: "css-loader" // translates CSS into CommonJS
+            //     }, {
+            //         loader: "less-loader" // compiles Less to CSS
+            //     }]
+            // },
             // {
             //     test: /\.styl/,
             //     use: [
@@ -85,6 +86,14 @@ const config = {
 }
 
 if (isDev) {
+    config.module.rules.push({
+        test: /\.less$/,
+        use: [
+            'style-loader',
+            'css-loader',
+            'less-loader'
+        ]
+    })
     config.devtool = '#cheap-module-eval-source-map'
     config.devServer = {
         port: 8000,
@@ -100,6 +109,23 @@ if (isDev) {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin()
     )
+}else{
+    config.module.rules.push({
+        test: /\.less$/,
+        use: [
+            miniCssTextExtractPlugin.loader,
+            'css-loader'
+        ]
+    })
+    config.plugins.push(
+        new miniCssTextExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "styles.[contentHash:8].css"   //把css文件单独打包
+        })
+    )
+    new webpack.optimize.RuntimeChunkPlugin({      // 打包和webpack打包相关的代码
+        name: 'runtime'
+    })
 }
 
 module.exports = config
